@@ -14,7 +14,7 @@ async function handleRequest(request: Request): Promise<Response> {
 
   const channel = match[1];
   const path = match[2];
-  const targetUrl = `http://145.239.19.149/${channel}/${path}`;
+  const targetUrl = `http://145.239.19.149:9300/${channel}/${path}`;
 
   // Handle CORS preflight
   if (request.method === "OPTIONS") {
